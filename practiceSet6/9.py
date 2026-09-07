@@ -1,9 +1,9 @@
 #write a program to print following star pattern. for n=3
 """
 
-* * *
-*   *
-* * *
+***
+* *
+***
 
 """
 
@@ -14,6 +14,6 @@ for i in range(1, n+1):
         print("*"* n, end="")
     else:    
         print("*", end="")
-        print(" ",* (n-2), end="")
+        print(" "* (n-2), end="")
         print("*", end="")
     print("")        
