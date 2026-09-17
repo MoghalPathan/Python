@@ -1,0 +1,1 @@
+#write a program to wipe out the content of file using python.

@@ -1,0 +1,1 @@
+#write a programto find out whether a file is identicala and matches the content of another file.
