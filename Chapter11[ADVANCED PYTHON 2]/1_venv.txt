@@ -1,0 +1,29 @@
+<<<<< Virtual environments
+
+Problem: suppose Project A needs numpy 1.20 and Project B needs numpy 2.0. 
+If you install packages globally, they clash and one project breaks.
+
+Solution: a virtual environment is a separate, isolated Python setup for each project. 
+Each project gets its own packages and versions, and your global Python stays clean.
+
+
+# 1. Go to your project folder
+cd myproject
+
+# 2. Create the environment (named "venv" here)
+python -m venv venv
+
+# 3. Activate it
+venv\Scripts\activate
+
+# 4. Now install packages (they go only into this venv)
+pip install PyQt5 requests
+
+# 5. See what is installed
+pip list
+
+# 6. Save the package list to a file
+pip freeze > requirements.txt
+
+# 7. Leave the environment
+deactivate
